@@ -13,9 +13,12 @@ BevRenderingConfig:
 
     range_m: 20 # 20 m in all directions
 
-    tbv_dataroot: /srv/scratch/jlambert30/tbv_dataset
-    rendered_dataset_dir: /srv/scratch/jlambert30/tbv_dataset/rendered_bev_2022_03_27_evaltimestamps
-    seamseg_output_dataroot: /srv/scratch/jlambert30/tbv_dataset/seamseg_output
+    # tbv_dataroot: /srv/scratch/jlambert30/tbv_dataset
+    tbv_dataroot: /home/zyx/dataset/tbv_dataset
+    # rendered_dataset_dir: /srv/scratch/jlambert30/tbv_dataset/rendered_bev_2022_03_27_evaltimestamps
+    rendered_dataset_dir: /home/zyx/dataset/tbv_dataset/rendered_bev_2022_03_27_evaltimestamps
+    # seamseg_output_dataroot: /srv/scratch/jlambert30/tbv_dataset/seamseg_output
+    seamseg_output_dataroot: /home/zyx/dataset/tbv_dataset/seamseg_output
 
     render_test_set_only: True
     jitter_vector_map: False

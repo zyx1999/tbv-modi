@@ -23,7 +23,7 @@ import numpy as np
 
 import tbv.utils.vis_utils as vis_utils
 from tbv.synthetic_generation.map_perturbation import SyntheticChangeType
-
+from av2.datasets.sensor.av2_sensor_dataloader import AV2SensorDataLoader
 """
 Visualize triplets of sensor imagery, unchanged maps, and changed map examples, side-by-side.
 
@@ -123,6 +123,7 @@ def visualize_training_examples(
                 )
 
                 triplet_save_fpath = Path(output_dir) / f"{change_type}_{Path(sensor_img_fpath).stem}.jpg"
+                print(triplet_save_fpath)
                 imageio.imwrite(triplet_save_fpath, triplet_img)
 
 
@@ -169,7 +170,7 @@ def run_visualize_training_examples(
 
     # find log ids
     if log_id is None:
-        dl = AV2SensorDataLoader(data_dir=data_root, labels_dir=data_root)
+        dl = AV2SensorDataLoader(data_dir=Path(data_root), labels_dir=Path(data_root))
         log_ids = dl.get_valid_ids()
     else:
         log_ids = [log_id]

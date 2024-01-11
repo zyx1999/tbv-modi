@@ -9,7 +9,7 @@ channels:
   - defaults
 dependencies:
   # python essentials
-  - python>=3.8
+  - python=3.8.18
   - pip
   # formatting and dev environment
   - black
@@ -34,9 +34,9 @@ dependencies:
   - cudatoolkit=11.3
   - mapbox_earcut
   - opencv # preferring conda-forge's distribution as it provides the latest distribution
-  - pytorch
-  - shapely
-  - torchvision
+  - pytorch=1.10.0
+  - shapely=1.8.5
+  - torchvision=0.11.0
   - trimesh
   # io
   - h5py

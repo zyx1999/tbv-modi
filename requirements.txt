@@ -1,0 +1,40 @@
+# formatting and dev environment
+black
+coverage
+flake8
+mypy
+pylint
+pytest
+
+# dask and related
+dask
+
+# core functionality and APIs
+matplotlib>=3.4.2
+networkx
+numpy
+pandas
+pillow>=8.0.1
+scikit-learn
+hydra-core
+
+# 3rd party algorithms for different modules
+captum
+mapbox_earcut
+opencv-python # 使用 opencv-python 替代 conda 的 opencv
+shapely
+trimesh
+
+# io
+h5py
+plotly>=4.14.3
+tabulate
+imageio
+
+# pip specific
+av2==0.1.0
+omegaconf
+seaborn
+scipy>=1.6.0
+scikit-image
+umsgpack

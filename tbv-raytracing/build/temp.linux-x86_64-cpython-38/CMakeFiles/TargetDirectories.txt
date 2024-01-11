@@ -1,0 +1,3 @@
+/home/zyx/projs/tbv/tbv-raytracing/build/temp.linux-x86_64-cpython-38/CMakeFiles/rebuild_cache.dir
+/home/zyx/projs/tbv/tbv-raytracing/build/temp.linux-x86_64-cpython-38/CMakeFiles/edit_cache.dir
+/home/zyx/projs/tbv/tbv-raytracing/build/temp.linux-x86_64-cpython-38/CMakeFiles/tbv_raytracing.dir

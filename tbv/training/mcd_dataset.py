@@ -414,7 +414,7 @@ def make_test_CE_dataset(
     # get subdir, e.g. rendered_egoview_2022_03_29 ->
     #                  rendered_egoview_2022_03_29/_depthocclusionreasoningTrue
     rendered_data_root = glob.glob(f"{dataset_args.rendered_dataset_dir}/*")[0]
-
+    print(f"rendered_data_root: {rendered_data_root}")
     data_list = []
     sensor_img_fpaths = get_sensor_img_fpaths(dataset_args)
 
@@ -422,7 +422,7 @@ def make_test_CE_dataset(
 
     # first, get a list of sensor file paths for each log
     for sensor_img_fpath in sensor_img_fpaths:
-
+        print(f"sensor_img_fpath {sensor_img_fpath}")
         if dataset_args.viewpoint == SensorViewpoint.BEV:
             log_id, ts = get_logid_ts_from_bev_sensor_path(sensor_img_fpath, dataset_args.sensor_modality)
         elif dataset_args.viewpoint == SensorViewpoint.EGOVIEW:
